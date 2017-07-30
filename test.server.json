@@ -1,0 +1,32 @@
+{
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-07-30T19:28:56.088Z",
+		"end": "2017-07-30T19:28:56.095Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should return Glyph instance",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) )` should return Glyph instance",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return Glyph instance",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) )` should return Glyph instance",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
+}

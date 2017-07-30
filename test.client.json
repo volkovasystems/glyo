@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-07-30T19:28:57.781Z",
+	"end": "2017-07-30T19:30:18.227Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "glyo",
+			"duration": 0,
+			"start": "2017-07-30T19:30:14.884Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "glyo",
+			"duration": 3147,
+			"start": "2017-07-30T19:30:14.885Z",
+			"end": "2017-07-30T19:30:18.032Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-07-30T19:30:14.888Z",
+					"end": "2017-07-30T19:30:14.889Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return Glyph instance"
+				},
+				{
+					"start": "2017-07-30T19:30:18.027Z",
+					"end": "2017-07-30T19:30:18.029Z",
+					"duration": 2,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return Glyph instance"
+				},
+				{
+					"start": "2017-07-30T19:30:18.032Z",
+					"end": "2017-07-30T19:30:18.032Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "glyo"
+				}
+			]
+		},
+		{
+			"name": "`glyo( Symbol( 'hello' ) )`",
+			"duration": 3144,
+			"start": "2017-07-30T19:30:14.886Z",
+			"end": "2017-07-30T19:30:18.030Z",
+			"tests": [
+				{
+					"name": "should return Glyph instance",
+					"start": "2017-07-30T19:30:14.887Z",
+					"end": "2017-07-30T19:30:18.026Z",
+					"duration": 3139,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
