@@ -1,6 +1,6 @@
 {
 	"name": "glyo",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Symbol object class wrapper.",
 	"main": "glyo.js",
 	"support": "glyo.support.js",
@@ -44,7 +44,7 @@
 	"homepage": "https://github.com/volkovasystems/glyo#readme",
 	"dependencies": {
 		"babel-runtime": "^6.25.0",
-		"ehm": "^0.18.0",
+		"ehm": "^0.19.0",
 		"harden": "^0.23.0"
 	},
 	"devDependencies": {
