@@ -94,7 +94,13 @@ class Glyph extends Meta {
 			@end-meta-configuration
 		*/
 
-		return Meta.deserialize( data, this );
+		let entity = Meta.deserialize( data, parser, this );
+
+		if( entity.isCorrupted( ) ){
+			return entity.revert( );
+		}
+
+		return entity;
 	}
 
 	static isCompatible( tag ){

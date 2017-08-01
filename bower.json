@@ -1,6 +1,6 @@
 {
 	"name": "glyo",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Symbol object class wrapper.",
 	"main": "glyo.deploy.js",
 	"support": "glyo.support.js",
@@ -27,7 +27,7 @@
 		"harden": "^0.23.0"
 	},
 	"dependencies": {
-		"ehm": "^0.15.0",
+		"ehm": "^0.17.0",
 		"harden": "^0.23.0"
 	}
 }
