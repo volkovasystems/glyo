@@ -146,11 +146,10 @@ class Glyph extends Meta {
 	}
 
 	isEqual( symbol ){
-		if( symbol instanceof Glyph ){
-			return this.toString( ) == symbol.toString( );
-		}
-
-		if( typeof symbol == SYMBOL_TYPE ){
+		if(
+			symbol instanceof Glyph
+			|| typeof symbol == SYMBOL_TYPE
+		){
 			return this.toString( ) == symbol.toString( );
 		}
 
