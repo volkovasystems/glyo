@@ -5,15 +5,15 @@
 		"passes": 1,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-02T17:46:30.186Z",
-		"end": "2017-08-02T17:46:30.195Z",
-		"duration": 9
+		"start": "2017-08-07T12:43:13.040Z",
+		"end": "2017-08-07T12:43:13.045Z",
+		"duration": 5
 	},
 	"tests": [
 		{
 			"title": "should return Glyph instance",
 			"fullTitle": "glyo `glyo( Symbol( 'hello' ) )` should return Glyph instance",
-			"duration": 3,
+			"duration": 2,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -24,7 +24,7 @@
 		{
 			"title": "should return Glyph instance",
 			"fullTitle": "glyo `glyo( Symbol( 'hello' ) )` should return Glyph instance",
-			"duration": 3,
+			"duration": 2,
 			"currentRetry": 0,
 			"err": {}
 		}
