@@ -81,6 +81,7 @@ describe( "glyo", ( ) => {
 			assert.equal( data.constructor.name, "Glyph" );
 
 			assert.equal( data.valueOf( ), symbol );
+
 		} );
 	} );
 
@@ -93,6 +94,7 @@ describe( "glyo", ( ) => {
 			assert.equal( data.constructor.name, "Glyph" );
 
 			assert.equal( data.valueOf( ).toString( ), "Symbol(hello)" );
+
 		} );
 	} );
 
@@ -103,6 +105,7 @@ describe( "glyo", ( ) => {
 			assert.equal( typeof data, "string" );
 
 			assert.equal( data, "Symbol(hello)" );
+
 		} );
 	} );
 
@@ -113,6 +116,7 @@ describe( "glyo", ( ) => {
 			assert.equal( typeof data, "number" );
 
 			assert.equal( data.toString( ), "NaN" );
+
 		} );
 	} );
 
@@ -123,6 +127,7 @@ describe( "glyo", ( ) => {
 			assert.equal( typeof data, "boolean" );
 
 			assert.equal( data, true );
+
 		} );
 	} );
 
@@ -141,6 +146,7 @@ describe( "glyo", ( ) => {
 			assert.equal( "format" in descriptor, true );
 
 			assert.deepEqual( descriptor, { "type": "symbol", "name": "Symbol", "value": "[symbol Symbol:Symbol(hello)]", "format": "data-url-tag" } );
+
 		} );
 	} );
 
@@ -377,6 +383,7 @@ describe( "glyo", ( ) => {
 			//: @end-ignore
 
 			assert.equal( result, true );
+
 		} );
 	} );
 
@@ -398,6 +405,7 @@ describe( "glyo", ( ) => {
 			//: @end-ignore
 
 			assert.equal( result, true );
+
 		} );
 	} );
 
@@ -419,6 +427,7 @@ describe( "glyo", ( ) => {
 			//: @end-ignore
 
 			assert.equal( result, true );
+
 		} );
 	} );
 
@@ -439,6 +448,7 @@ describe( "glyo", ( ) => {
 			//: @end-ignore
 
 			assert.equal( result, true );
+
 		} );
 	} );
 
@@ -467,6 +477,101 @@ describe( "glyo", ( ) => {
 			//: @end-ignore
 
 			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`glyo( 'hello' ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = glyo( "hello" ).toString( );
+
+					let test = typeof result == "string" &&
+						result == "Symbol(hello)";
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`glyo( 'hello' ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = glyo( "hello" ).toNumber( );
+
+					let test = typeof result == "number" &&
+						result.toString( ) == "NaN";
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`glyo( 'hello' ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = glyo( "hello" ).toBoolean( );
+
+					let test = typeof result == "boolean" &&
+						result == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`glyo( 'hello' ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = glyo( "hello" ).toObject( );
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true &&
+						descriptor.type == "symbol" &&
+						descriptor.name == "Symbol" &&
+						descriptor.value == "[symbol Symbol:Symbol(hello)]" &&
+						descriptor.format == "data-url-tag";
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+			
+			assert.equal( result, true );
+
 		} );
 	} );
 
