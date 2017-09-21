@@ -51,7 +51,7 @@
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const glyo = require( "./glyo.js" );
@@ -77,6 +77,124 @@ describe( "glyo", ( ) => {
 			assert.equal( data.constructor.name, "Glyph" );
 
 			assert.equal( data.valueOf( ), symbol );
+
+		} );
+	} );
+
+	describe( "`glyo( 'hello' )`", ( ) => {
+		it( "should return Glyph instance", ( ) => {
+			let data = glyo( "hello" );
+
+			assert.equal( typeof data, "object" );
+
+			assert.equal( data.constructor.name, "Glyph" );
+
+			assert.equal( data.valueOf( ).toString( ), "Symbol(hello)" );
+
+		} );
+	} );
+
+	describe( "`glyo( Symbol( 'hello' ) ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			let data = glyo( Symbol( "hello" ) ).toString( );
+
+			assert.equal( typeof data, "string" );
+
+			assert.equal( data, "Symbol(hello)" );
+
+		} );
+	} );
+
+	describe( "`glyo( Symbol( 'hello' ) ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			let data = glyo( Symbol( "hello" ) ).toNumber( );
+
+			assert.equal( typeof data, "number" );
+
+			assert.equal( data.toString( ), "NaN" );
+
+		} );
+	} );
+
+	describe( "`glyo( Symbol( 'hello' ) ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			let data = glyo( Symbol( "hello" ) ).toBoolean( );
+
+			assert.equal( typeof data, "boolean" );
+
+			assert.equal( data, true );
+
+		} );
+	} );
+
+	describe( "`glyo( Symbol( 'hello' ) ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			let descriptor = glyo( Symbol( "hello" ) ).toObject( );
+
+			assert.equal( typeof descriptor, "object" );
+
+			assert.equal( "type" in descriptor, true );
+
+			assert.equal( "name" in descriptor, true );
+
+			assert.equal( "value" in descriptor, true );
+
+			assert.equal( "format" in descriptor, true );
+
+			assert.deepEqual( descriptor, { "type": "symbol", "name": "Symbol", "value": "[symbol Symbol:Symbol(hello)]", "format": "data-url-tag" } );
+
+		} );
+	} );
+
+	describe( "`glyo( 'hello' ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			let result = glyo( "hello" ).toString( );
+
+			assert.equal( typeof result, "string" );
+
+			assert.equal( result, "Symbol(hello)" );
+
+		} );
+	} );
+
+	describe( "`glyo( 'hello' ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			let result = glyo( "hello" ).toNumber( );
+
+			assert.equal( typeof result, "number" );
+
+			assert.equal( result.toString( ), "NaN" );
+
+		} );
+	} );
+
+	describe( "`glyo( 'hello' ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			let result = glyo( "hello" ).toBoolean( );
+
+			assert.equal( typeof result, "boolean" );
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`glyo( 'hello' ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			let descriptor = glyo( "hello" ).toObject( );
+
+			assert.equal( typeof descriptor, "object" );
+
+			assert.equal( "type" in descriptor, true );
+
+			assert.equal( "name" in descriptor, true );
+
+			assert.equal( "value" in descriptor, true );
+
+			assert.equal( "format" in descriptor, true );
+
+			assert.deepEqual( descriptor, { "type": "symbol", "name": "Symbol", "value": "[symbol Symbol:Symbol(hello)]", "format": "data-url-tag" } );
+
 		} );
 	} );
 

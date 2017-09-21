@@ -1,19 +1,82 @@
 {
 	"stats": {
-		"suites": 2,
-		"tests": 1,
-		"passes": 1,
+		"suites": 11,
+		"tests": 10,
+		"passes": 10,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-07T12:43:13.040Z",
-		"end": "2017-08-07T12:43:13.045Z",
-		"duration": 5
+		"start": "2017-09-21T02:52:25.947Z",
+		"end": "2017-09-21T02:52:25.960Z",
+		"duration": 13
 	},
 	"tests": [
 		{
 			"title": "should return Glyph instance",
 			"fullTitle": "glyo `glyo( Symbol( 'hello' ) )` should return Glyph instance",
 			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return Glyph instance",
+			"fullTitle": "glyo `glyo( 'hello' )` should return Glyph instance",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) ).toBoolean( )` should return boolean type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return object type",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) ).toObject( )` should return object type",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "glyo `glyo( 'hello' ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "glyo `glyo( 'hello' ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "glyo `glyo( 'hello' ).toBoolean( )` should return boolean type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return object type",
+			"fullTitle": "glyo `glyo( 'hello' ).toObject( )` should return object type",
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -25,6 +88,69 @@
 			"title": "should return Glyph instance",
 			"fullTitle": "glyo `glyo( Symbol( 'hello' ) )` should return Glyph instance",
 			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return Glyph instance",
+			"fullTitle": "glyo `glyo( 'hello' )` should return Glyph instance",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) ).toBoolean( )` should return boolean type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return object type",
+			"fullTitle": "glyo `glyo( Symbol( 'hello' ) ).toObject( )` should return object type",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "glyo `glyo( 'hello' ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "glyo `glyo( 'hello' ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "glyo `glyo( 'hello' ).toBoolean( )` should return boolean type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return object type",
+			"fullTitle": "glyo `glyo( 'hello' ).toObject( )` should return object type",
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		}

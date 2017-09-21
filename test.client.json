@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 1,
+		"passed": 10,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-07T12:43:14.145Z",
-	"end": "2017-08-07T12:43:51.380Z",
+	"start": "2017-09-21T02:52:27.532Z",
+	"end": "2017-09-21T02:55:34.097Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,37 +28,181 @@
 		{
 			"name": "glyo",
 			"duration": 0,
-			"start": "2017-08-07T12:43:48.505Z",
+			"start": "2017-09-21T02:55:31.531Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "glyo",
-			"duration": 2052,
-			"start": "2017-08-07T12:43:48.506Z",
-			"end": "2017-08-07T12:43:50.558Z",
+			"duration": 2386,
+			"start": "2017-09-21T02:55:31.531Z",
+			"end": "2017-09-21T02:55:33.917Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-07T12:43:48.507Z",
-					"end": "2017-08-07T12:43:48.508Z",
-					"duration": 1,
+					"start": "2017-09-21T02:55:31.533Z",
+					"end": "2017-09-21T02:55:31.533Z",
+					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "glyo",
 					"associatedTest": "should return Glyph instance"
 				},
 				{
-					"start": "2017-08-07T12:43:50.557Z",
-					"end": "2017-08-07T12:43:50.557Z",
+					"start": "2017-09-21T02:55:33.369Z",
+					"end": "2017-09-21T02:55:33.369Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "glyo",
 					"associatedTest": "should return Glyph instance"
 				},
 				{
-					"start": "2017-08-07T12:43:50.558Z",
-					"end": "2017-08-07T12:43:50.558Z",
+					"start": "2017-09-21T02:55:33.370Z",
+					"end": "2017-09-21T02:55:33.370Z",
 					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return Glyph instance"
+				},
+				{
+					"start": "2017-09-21T02:55:33.426Z",
+					"end": "2017-09-21T02:55:33.426Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return Glyph instance"
+				},
+				{
+					"start": "2017-09-21T02:55:33.426Z",
+					"end": "2017-09-21T02:55:33.426Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.483Z",
+					"end": "2017-09-21T02:55:33.483Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.483Z",
+					"end": "2017-09-21T02:55:33.483Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return number type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.542Z",
+					"end": "2017-09-21T02:55:33.543Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return number type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.543Z",
+					"end": "2017-09-21T02:55:33.544Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.617Z",
+					"end": "2017-09-21T02:55:33.618Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.618Z",
+					"end": "2017-09-21T02:55:33.618Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.673Z",
+					"end": "2017-09-21T02:55:33.673Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.673Z",
+					"end": "2017-09-21T02:55:33.673Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.728Z",
+					"end": "2017-09-21T02:55:33.729Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.734Z",
+					"end": "2017-09-21T02:55:33.734Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return number type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.793Z",
+					"end": "2017-09-21T02:55:33.793Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return number type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.793Z",
+					"end": "2017-09-21T02:55:33.794Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.850Z",
+					"end": "2017-09-21T02:55:33.851Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.852Z",
+					"end": "2017-09-21T02:55:33.853Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.916Z",
+					"end": "2017-09-21T02:55:33.917Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "glyo",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-09-21T02:55:33.917Z",
+					"end": "2017-09-21T02:55:33.918Z",
+					"duration": 1,
 					"title": "\"after all\" hook",
 					"associatedSuite": "glyo"
 				}
@@ -66,15 +210,159 @@
 		},
 		{
 			"name": "`glyo( Symbol( 'hello' ) )`",
-			"duration": 2051,
-			"start": "2017-08-07T12:43:48.507Z",
-			"end": "2017-08-07T12:43:50.558Z",
+			"duration": 1837,
+			"start": "2017-09-21T02:55:31.532Z",
+			"end": "2017-09-21T02:55:33.369Z",
 			"tests": [
 				{
 					"name": "should return Glyph instance",
-					"start": "2017-08-07T12:43:48.507Z",
-					"end": "2017-08-07T12:43:50.557Z",
-					"duration": 2050,
+					"start": "2017-09-21T02:55:31.532Z",
+					"end": "2017-09-21T02:55:33.369Z",
+					"duration": 1837,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`glyo( 'hello' )`",
+			"duration": 56,
+			"start": "2017-09-21T02:55:33.370Z",
+			"end": "2017-09-21T02:55:33.426Z",
+			"tests": [
+				{
+					"name": "should return Glyph instance",
+					"start": "2017-09-21T02:55:33.370Z",
+					"end": "2017-09-21T02:55:33.426Z",
+					"duration": 56,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`glyo( Symbol( 'hello' ) ).toString( )`",
+			"duration": 57,
+			"start": "2017-09-21T02:55:33.426Z",
+			"end": "2017-09-21T02:55:33.483Z",
+			"tests": [
+				{
+					"name": "should return string type",
+					"start": "2017-09-21T02:55:33.426Z",
+					"end": "2017-09-21T02:55:33.483Z",
+					"duration": 57,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`glyo( Symbol( 'hello' ) ).toNumber( )`",
+			"duration": 60,
+			"start": "2017-09-21T02:55:33.483Z",
+			"end": "2017-09-21T02:55:33.543Z",
+			"tests": [
+				{
+					"name": "should return number type",
+					"start": "2017-09-21T02:55:33.483Z",
+					"end": "2017-09-21T02:55:33.542Z",
+					"duration": 59,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`glyo( Symbol( 'hello' ) ).toBoolean( )`",
+			"duration": 75,
+			"start": "2017-09-21T02:55:33.543Z",
+			"end": "2017-09-21T02:55:33.618Z",
+			"tests": [
+				{
+					"name": "should return boolean type",
+					"start": "2017-09-21T02:55:33.543Z",
+					"end": "2017-09-21T02:55:33.617Z",
+					"duration": 74,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`glyo( Symbol( 'hello' ) ).toObject( )`",
+			"duration": 55,
+			"start": "2017-09-21T02:55:33.618Z",
+			"end": "2017-09-21T02:55:33.673Z",
+			"tests": [
+				{
+					"name": "should return object type",
+					"start": "2017-09-21T02:55:33.618Z",
+					"end": "2017-09-21T02:55:33.673Z",
+					"duration": 55,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`glyo( 'hello' ).toString( )`",
+			"duration": 56,
+			"start": "2017-09-21T02:55:33.673Z",
+			"end": "2017-09-21T02:55:33.729Z",
+			"tests": [
+				{
+					"name": "should return string type",
+					"start": "2017-09-21T02:55:33.673Z",
+					"end": "2017-09-21T02:55:33.728Z",
+					"duration": 55,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`glyo( 'hello' ).toNumber( )`",
+			"duration": 64,
+			"start": "2017-09-21T02:55:33.729Z",
+			"end": "2017-09-21T02:55:33.793Z",
+			"tests": [
+				{
+					"name": "should return number type",
+					"start": "2017-09-21T02:55:33.729Z",
+					"end": "2017-09-21T02:55:33.793Z",
+					"duration": 64,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`glyo( 'hello' ).toBoolean( )`",
+			"duration": 58,
+			"start": "2017-09-21T02:55:33.793Z",
+			"end": "2017-09-21T02:55:33.851Z",
+			"tests": [
+				{
+					"name": "should return boolean type",
+					"start": "2017-09-21T02:55:33.793Z",
+					"end": "2017-09-21T02:55:33.850Z",
+					"duration": 57,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`glyo( 'hello' ).toObject( )`",
+			"duration": 65,
+			"start": "2017-09-21T02:55:33.852Z",
+			"end": "2017-09-21T02:55:33.917Z",
+			"tests": [
+				{
+					"name": "should return object type",
+					"start": "2017-09-21T02:55:33.852Z",
+					"end": "2017-09-21T02:55:33.916Z",
+					"duration": 64,
 					"state": "pass"
 				}
 			],
